@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Glippy Glop",
+		"id": 1,
+		"path" : "/bins/bank1/a.aif"
+	},
+{
+		"name": "Glippy Glop2",
+		"id": 2,
+		"path" : "/bins/bank1/c.aif"
+	},
+{
+		"name": "Glippy Glop3",
+		"id": 3,
+		"path" : "/bins/bank1/e.aif"
+	}
+	]

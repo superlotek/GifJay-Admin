@@ -1,0 +1,53 @@
+[
+	{
+		"bankName": "blackwhite",
+		"bankNumber": 1,
+		"keys": [
+			{
+				"value": "a",
+				"alphaPosition": 1,
+				"qwertyPosition": 11,
+				"gif": {
+					"id": 1,
+					"repeat": true,
+					"hide": false
+				}
+			},
+{
+				"value": "b",
+				"alphaPosition": 1,
+				"qwertyPosition": 11,
+				"gif": {
+					"id": 2,
+					"repeat": true,
+					"hide": false
+				}
+			}		]
+	},
+	{
+		"bankName": "blurp",
+		"bankNumber": 2,
+		"keys": [
+			{
+				"value": "b",
+				"alphaPosition": 1,
+				"qwertyPosition": 11,
+				"gif": {
+					"id": 1,
+					"repeat": true,
+					"hide": false
+				}
+			},
+			{
+				"value": "c",
+				"alphaPosition": 1,
+				"qwertyPosition": 11,
+				"gif": {
+					"id": 3,
+					"repeat": false,
+					"hide": false
+				}
+			}
+		]
+	}
+]

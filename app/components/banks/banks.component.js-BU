@@ -1,0 +1,66 @@
+angular
+	.module('app')
+	.component('banks', {
+		templateUrl: 'app/components/banks/banks.html',
+		controller: BanksController
+	});
+
+function BanksController(GifService, $scope) {
+	var ctrl = this;
+	ctrl.keys = [];
+	$scope.banksDisplay = false;
+	$scope.newBank = false;
+
+	ctrl.$onInit = function () {
+		console.log('BanksController loaded!');
+		GifService.getKeys()
+			.then(function (response) {
+				ctrl.keys = response;
+			});
+	};
+
+	ctrl.deleteGif = function (name, index) {
+		console.log('DO YOU WANT TO REMOVE: ', name, index);
+		var gifToDelete = ctrl.keys[index].gif;
+		gifToDelete.delete = gifToDelete.delete ? false : true;
+	};
+
+	ctrl.cancelRemove = function(index) {
+		console.log('CANCEL REMOVE', index);
+		var gifToDelete = ctrl.keys[index].gif;
+		gifToDelete.delete = gifToDelete.delete ? false : true;
+	}
+
+	ctrl.removeGif = function(index) {
+		console.log('ACTUALLY REMOVE GIF', index);
+		var gifToActuallyDelete = ctrl.keys[index];
+		gifToActuallyDelete.delete = gifToActuallyDelete.delete ? false : true;
+		gifToActuallyDelete.gif = {};
+		gifToActuallyDelete.failedToReach = true;
+	}
+
+	ctrl.repeatGif = function (name, index) {
+		console.log('REPEAT GIF: ', name, index);
+		var gifToRepeat = ctrl.keys[index].gif;
+		gifToRepeat.repeat = gifToRepeat.repeat ? false : true;
+	};
+
+	ctrl.hideGif = function (name, index) {
+		console.log('HIDE GIF: ', name, index);
+
+		var gifToHide = ctrl.keys[index].gif;
+		console.log(gifToHide);
+		gifToHide.hide = gifToHide.hide ? false : true;
+	};
+
+	ctrl.loadBanks = function () {
+		console.log('LOAD BANKS');
+		$scope.banksDisplay = true;
+	};
+
+	ctrl.newBank = function () {
+		console.log('NEW BANK');
+		$scope.newBank = true;
+	};
+
+}

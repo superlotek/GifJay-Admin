@@ -1,0 +1,99 @@
+<div>
+
+	<div class="bank-select">
+		<a class="button load" ng-click="$ctrl.loadBanks();" href=""><span class="icon-download"></span>Load Bank</a>
+		<a class="button new" ng-click="$ctrl.newBank();" href=""><span class="icon-plus"></span>New Bank</a>
+	</div>
+
+	<div class="new-bank" ng-show="newBank">
+		<input type="text" placeholder="Name of bank" />
+		<input type="submit" value="ok" />
+	</div>
+
+	<div class="keyboard-sort" ng-show="banksDisplay">
+		<a href=""
+			ng-click="type = 'alphaPosition'">
+			<span class="icon-sort-alpha-asc"></span>
+		</a>
+		<a href=""
+			ng-click="type = 'qwertyPosition'">
+			<span class="icon-keyboard"></span>
+		</a>
+	</div>
+
+	<div class="gif-grid" ng-show="banksDisplay">
+
+		<div class="gif-container" ng-repeat="key in $ctrl.keys | orderBy: type">
+
+			<div class="gif-name">
+				{{key.gif.name}}
+			</div>
+
+			<div
+				class="gif-clip"
+				ng-if="!key.failedToReach"
+				ng-class="{
+					repeat: key.gif.repeat,
+					'no-repeat': !key.gif.repeat,
+					hide: !key.gif.hide,
+					show: key.gif.hide
+				}"
+				style="background-image: url(bins/{{key.gif.bankName}}/{{key.gif.id}}.gif);">
+
+				<div class="key-letter">
+					{{key.value}}
+				</div>
+
+				<div class="delete-modal" ng-if="key.gif.delete">
+					<p>Are you sure you want to remove this</p>
+					<span class="icon-cancel-circle" ng-click="$ctrl.cancelRemove($index);"></span>
+					<span class="icon-checkmark" ng-click="$ctrl.removeGif($index);"></span>
+				</div>
+
+			</div>
+
+			<div class="gif-clip empty" ng-if="key.failedToReach">
+				<div class="key-letter">
+					{{key.value}}
+				</div>
+			</div>
+
+			<div class="gif__parameters" ng-if="!key.failedToReach">
+				<a
+					class="delete-gif"
+					href=""
+					ng-click="$ctrl.deleteGif(key.gif.name, $index);">
+					<span class="icon-bin"></span>
+				</a>
+				<a
+					class="repeat-gif"
+					href=""
+					ng-click="$ctrl.repeatGif(key.gif.name, $index);">
+					<span
+						ng-class="{
+							'icon-grid_on': !key.gif.repeat,
+							'icon-enlarge': key.gif.repeat
+						}">
+					</span>
+				</a>
+				<a
+					class="hide-gif"
+					href=""
+					ng-click="$ctrl.hideGif(key.gif.name, $index);">
+					<span
+						ng-class="{
+							'icon-eye': key.gif.hide,
+							'icon-eye-blocked': !key.gif.hide
+						}">
+					</span>
+				</a>
+			</div>
+
+		</div>
+
+	<!-- <pre>{{ $ctrl.keys | json }}</pre> -->
+
+
+	</div>
+
+</div>

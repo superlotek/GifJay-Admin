@@ -1,0 +1,263 @@
+[
+	{
+		"value": "a",
+		"alphaPosition": 1,
+		"qwertyPosition": 11,
+		"gif": {
+			"name": "Glippy Glop",
+			"repeat": true,
+			"hide": false,
+			"bankNumber": 2,
+			"bankName": "blackwhite",
+			"id": "gif10"
+		}
+	},
+	{
+		"value": "b",
+		"alphaPosition": 2,
+		"qwertyPosition": 24,
+		"gif": {
+			"name": "Razen Banish",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 2,
+			"bankName": "blackwhite",
+			"id": "gif2"
+		}
+	},
+	{
+		"value": "c",
+		"alphaPosition": 3,
+		"qwertyPosition": 22,
+		"gif": {
+			"name": "Castorian Rain",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 2,
+			"bankName": "blackwhite",
+			"id": "gif3"
+		}
+	},
+	{
+		"value": "d",
+		"alphaPosition": 4,
+		"qwertyPosition": 13,
+		"gif": {
+			"name": "Sherpy",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 2,
+			"bankName": "blackwhite",
+			"id": "gif4"
+		}
+	},
+	{
+		"value": "e",
+		"alphaPosition": 5,
+		"qwertyPosition": 3,
+		"gif": {
+			"name": "B&W no 1",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 2,
+			"bankName": "blackwhite",
+			"id": "gif5"
+		}
+	},
+	{
+		"value": "f",
+		"alphaPosition": 6,
+		"qwertyPosition": 14,
+		"gif": {
+			"name": "Lazza Lookie",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 2,
+			"bankName": "blackwhite",
+			"id": "gif6"
+		}
+	},
+	{
+		"value": "g",
+		"alphaPosition": 7,
+		"qwertyPosition": 15,
+		"gif": {
+			"name": "Gabberish Gaze",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 2,
+			"bankName": "blackwhite",
+			"id": "gif7"
+		}
+	},
+	{
+		"value": "h",
+		"alphaPosition": 8,
+		"qwertyPosition": 16,
+		"gif": {
+			"name": "Storp Gingen",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 2,
+			"bankName": "blackwhite",
+			"id": "gif8"
+		}
+	},
+	{
+		"value": "i",
+		"alphaPosition": 9,
+		"qwertyPosition": 8,
+		"gif": {
+			"name": "Fantastic Voyage 1",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 3,
+			"bankName": "fantasticvoyage",
+			"id": "fv2_o"
+		}
+	},
+	{
+		"value": "j",
+		"alphaPosition": 10,
+		"qwertyPosition": 17,
+		"gif": {
+			"name": "Fantastic Voyage 5",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 3,
+			"bankName": "fantasticvoyage",
+			"id": "fv5_o"
+		}
+	},
+	{
+		"value": "k",
+		"alphaPosition": 11,
+		"qwertyPosition": 18,
+		"gif": {
+			"name": "Fantastic Voyage 6",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 3,
+			"bankName": "fantasticvoyage",
+			"id": "fv6_o"
+		}
+	},
+	{
+		"value": "l",
+		"alphaPosition": 12,
+		"qwertyPosition": 19,
+		"gif": {
+			"name": "Fantastic Voyage 7",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 3,
+			"bankName": "fantasticvoyage",
+			"id": "fv7_o"
+		}
+	},
+	{
+		"value": "m",
+		"alphaPosition": 13,
+		"qwertyPosition": 26,
+		"gif": {}
+	},
+	{
+		"value": "n",
+		"alphaPosition": 14,
+		"qwertyPosition": 25,
+		"gif": {}
+	},
+	{
+		"value": "o",
+		"alphaPosition": 15,
+		"qwertyPosition": 9,
+		"gif": {
+			"name": "Fantastic Voyage 3",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 3,
+			"bankName": "fantasticvoyage",
+			"id": "fv3_o"
+		}
+	},
+	{
+		"value": "p",
+		"alphaPosition": 16,
+		"qwertyPosition": 10,
+		"gif": {
+			"name": "Fantastic Voyage 4",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 3,
+			"bankName": "fantasticvoyage",
+			"id": "fv4_o"
+		}
+	},
+	{
+		"value": "q",
+		"alphaPosition": 17,
+		"qwertyPosition": 1,
+		"gif": {}
+	},
+	{
+		"value": "r",
+		"alphaPosition": 18,
+		"qwertyPosition": 4,
+		"gif": {}
+	},
+	{
+		"value": "s",
+		"alphaPosition": 19,
+		"qwertyPosition": 12,
+		"gif": {}
+	},
+	{
+		"value": "t",
+		"alphaPosition": 20,
+		"qwertyPosition": 5,
+		"gif": {}
+	},
+	{
+		"value": "u",
+		"alphaPosition": 21,
+		"qwertyPosition": 7,
+		"gif": {
+			"name": "Fantastic Voyage 1",
+			"repeat": false,
+			"hide": false,
+			"bankNumber": 3,
+			"bankName": "fantasticvoyage",
+			"id": "fv1_o"
+		}
+	},
+	{
+		"value": "v",
+		"alphaPosition": 22,
+		"qwertyPosition": 23,
+		"gif": {}
+	},
+	{
+		"value": "w",
+		"alphaPosition": 23,
+		"qwertyPosition": 2,
+		"gif": {}
+	},
+	{
+		"value": "x",
+		"alphaPosition": 24,
+		"qwertyPosition": 21,
+		"gif": {}
+	},
+	{
+		"value": "y",
+		"alphaPosition": 25,
+		"qwertyPosition": 6,
+		"gif": {}
+	},
+	{
+		"value": "z",
+		"alphaPosition": 26,
+		"qwertyPosition": 20,
+		"gif": {}
+	}
+]

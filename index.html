@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html ng-app="app">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>GifJay : Admin</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	 	<script src="app/libs/angular.js"></script>
+		<script src="app/libs/angular-ui-router.js"></script>
+		<script src="app/libs/mousetrap.min.js"></script>
+		
+
+	</head>
+
+	<body>
+		<div class="logo">
+			<img src="img/gifjay_logo_white_small.png" width="200" alt="GifJay" />
+
+		</div>
+		 <nav ng-controller="NavController">
+			<ul>
+				<li ng-class="{ active: isActive('/')}"><a ui-sref="home">Home</a></li>
+				<li ng-class="{ active: isActive('/play')}"><a ui-sref="play">Play</a></li>
+				<li ng-class="{ active: isActive('/banks')}"><a ui-sref="banks">Banks</a></li>
+				<li ng-class="{ active: isActive('/settings')}" ><a ui-sref="settings">Settings</a></li>
+			</ul>
+		</nav>
+		<ui-view></ui-view>
+	</body>
+
+	<script src="app/app.js"></script>
+	<script src="app/config.js"></script>
+	<script src="app/components/banks/banks.component.js"></script>
+	<script src="app/components/settings/settings.component.js"></script>
+	<script src="app/components/play/play.component.js"></script>	
+	<script src="app/controllers/MainController.js"></script>
+	<script src="app/controllers/NavController.js"></script>
+	<script src="app/controllers/HomeController.js"></script>
+	<script src="app/controllers/FileSaverController.js"></script>
+	<!-- <script src="app/directives/loading.directive.js"></script> -->
+	<script src="app/services/GifService.js"></script>
+	<script src="app/services/BankService.js"></script>
+</html>
+

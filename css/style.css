@@ -1,0 +1,220 @@
+* {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+ul, li {
+	padding: 0; margin: 0;
+	list-style-type: none;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #666666;
+  padding: 50px;
+  position: relative;
+  background: #ccc;
+}
+
+img { max-width: 100%; height: auto; } 
+a { text-decoration: none;}
+
+.button {
+	width: 200px;
+	background-color: #666;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+}
+	.button span {
+		padding: 0 10px 0 0;
+	}
+	.button.load {
+		background-color: #43C6DB;
+	}
+	.button.new {
+		background-color: #89C35C;
+	}
+
+.logo { text-align: center; }
+
+nav {
+	margin-bottom: 20px;
+    border-bottom: 1px solid #999;
+    padding: 0 0 10px 0;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	background: rgba(0,0,0,.75);
+    width: 400px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+	nav li {
+		margin: 10px 15px;
+	}
+		nav a {
+			color: #999;
+			font-weight: bold;
+			transition: all .5s;
+		}
+
+		nav a:hover {
+			color: #666;
+		}
+
+.active a {
+	color: #666;
+}
+
+/* BANKS : GIF SORTER */
+.keyboard-sort {
+	display: block;
+	margin: 0 0 10px;
+}
+	.keyboard-sort a {
+		color: #666;
+		padding: 5px;
+		text-decoration: none;
+		font-size: 1.25em;
+		transition: all .25s;
+	}
+		.keyboard-sort a:hover {
+			color: #eee;
+		}
+
+/* BANK SELECT */
+.bank-select {
+	margin: 0 0 20px 0;
+}
+
+
+/* GIF GRID */
+.gif-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+	.gif-container {
+		margin: 10px 5px;
+	}
+
+		.gif-name {
+			font-size: 11px;
+			text-transform: uppercase;
+			min-height: 15px;
+			color: #333;
+		}
+
+		.gif-clip {
+			width: 120px;
+		    height: 80px;
+		    border: 1px solid #000;
+		    overflow: hidden;
+			background: #efefef;
+			position: relative;
+		    background-position: center center;
+		    background-size: cover;
+		}
+
+		.gif-container.play-help .gif-clip {
+			background: rgba(255,255,255,.25);
+			width: 80px;
+		}
+
+		.delete-modal {
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, .85);
+			font-size: 12px;
+			font-weight: bold;
+			padding: 5px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.delete-modal span {
+			font-size: 1.25em;
+			color: red;
+			padding: 5px;
+			display: inline-block;
+			cursor: pointer;
+		}
+			.delete-modal .icon-checkmark {
+				color: green;
+			}
+
+
+	/* REPEAT / TILE */
+	.gif-clip.repeat { background-size: 50% auto; }
+	.gif-clip.no-repeat { background-size: cover; }
+
+	/* HIDE */
+	.gif-clip.show { opacity: .15; }
+	.gif-clip.hide { opacity: 1; }
+
+	.gif-clip.empty { border: 2px dashed #666666; }
+	.gif-clip.empty .gif__parameters { display: none; }
+
+	.key-letter {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,.5);
+		width: 25%;
+		text-align: center;
+		padding: 5px 0;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	/* CLIP PARAMETERS */
+	.gif__parameters {
+		background: #333;
+		padding: 5px;
+		min-height: 30px;
+	}
+
+		.gif__parameters span {
+			color: yellowgreen;
+			font-size: 1.25em;
+			transition: all .5s;
+
+		}
+			.gif__parameters span:hover {
+				color: greenyellow;
+			}
+
+
+/* PLAY */
+.stage-one { 
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* background-size: cover; */
+	background-image: url(../bins/blackwhite/gif2.gif);
+	background-position: center center;
+	/* background-repeat: no-repeat; */
+	z-index: -1;
+}

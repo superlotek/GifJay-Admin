@@ -1,0 +1,13 @@
+<div class="stage-one"></div>
+
+	<div class="gif-grid">
+
+		<div class="gif-container play-help" ng-repeat="key in $ctrl.keys | orderBy: type">
+
+			<div class="gif-clip" ng-click="$ctrl.playGif(key.value, key.gif.id, $index);">
+				<div class="key-letter">
+					{{key.value}}
+				</div>
+			</div>
+
+		</div>

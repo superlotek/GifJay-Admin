@@ -1,0 +1,26 @@
+<div>
+
+
+	<div class="gif-grid">
+
+		<div class="gif-container" ng-repeat="bank in $ctrl.banks | orderBy: type">
+
+			<div class="gif-name">
+				{{bank.bankName}}
+				{{bank.keys.length}}
+			</div>
+
+			<div class="gif-clip">
+				<div class="bank-letter">
+					{{bank.bankNumber}}
+				</div>
+			</div>
+
+		</div>
+
+	<pre>{{ $ctrl.banks | json }}</pre>
+
+
+	</div>
+
+</div>
